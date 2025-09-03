@@ -6,21 +6,8 @@
     "start": "electron .",
     "dist": "electron-builder"
   },
-  "build": {
-    "appId": "com.minecraft2d.desktop",
-    "productName": "Minecraft2D",
-    "directories": {
-      "output": "dist"
-    },
-    "files": [
-      "**/*"
-    ],
-    "win": {
-      "target": "portable"
-    }
-  },
   "devDependencies": {
-    "electron": "^28.0.0",
-    "electron-builder": "^24.6.0"
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
   }
 }
