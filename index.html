@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Minecraft-Like Desktop</title>
+  <style>
+    body { margin: 0; background:#0f172a; color:#e2e8f0; font-family:sans-serif; }
+    canvas { display:block; width:100vw; height:100vh; image-rendering: pixelated; }
+    #menu { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#0f172a; }
+    .btn { background:#1f2937; border:1px solid #334155; padding:10px 20px; margin:6px; border-radius:8px; cursor:pointer; color:#e5e7eb; font-size:16px; }
+    .btn:hover { background:#374151; }
+    #worldList { margin-top:20px; }
+    .world { display:flex; justify-content:space-between; background:#1e293b; padding:8px; border-radius:6px; margin:4px 0; width:240px; }
+    .world span { flex:1; }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <h1>2D Minecraft Desktop</h1>
+    <button class="btn" id="newWorldBtn">New World</button>
+    <div id="worldList"></div>
+  </div>
+  <canvas id="game" style="display:none"></canvas>
+  <script src="renderer.js"></script>
+</body>
+</html>
